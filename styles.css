@@ -60,7 +60,10 @@ section{
   justify-content: space-between;
 }
 .sec1-container2{
+  margin-top: 40px;
   display: flex;
+  width: auto;
+  height: auto;
 }
 
 h1{
@@ -110,9 +113,7 @@ p{
   cursor: pointer;
   transform: scale(0.8);
 }
-
 .card{
-  margin-top: 40px;
   width: 15.938vw;
   height: 19.375vw;
   background: #2B3544;
@@ -215,11 +216,15 @@ h4{
   header {
     padding-bottom: 60px;
   }
+  p{
+    margin: 40px;
+    margin-bottom: 50px;
+  }
   .sec1{
     padding: 0px
   }
   .sec1-container1{
-    padding: 0px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,6 +234,8 @@ h4{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0px;
+    margin: 0px;
   }
   p{
     text-align: center;
@@ -257,9 +264,12 @@ h4{
   .burger{
     display: block;
   }
-  .arrRight{
+  .arrRight{  
     margin: 0;
-    right: 150px;
+    right: 13.636vw;
+  }
+  .logotip{
+    width: 140px;
   }
 }
 
@@ -270,6 +280,120 @@ h4{
     padding: 0px 10.571vw;
   }
 }
-@media only screen and (max-width: 850px){
-  
+
+@media only screen and (max-width: 768px){
+  .card > img {
+    max-width: 100%;
+  }
+  .card{
+    height: 300px;
+    width: 245px;
+  }
+  .card:nth-child(1){
+    margin-right: 20px;
+  }
+  .sec2{
+    margin-top: 30px;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 680px){
+  body{
+    padding: 0px 80px;
+  }
+  h1{
+    font-size: 70px;
+  }
+  p{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .sec1-container2{
+    flex-direction: column;
+  }
+  .card:nth-child(1){
+    margin-right: 0px;
+  }
+  .card:nth-child(2){
+    margin-top: 30px;
+  }
+  .card{
+    height: 372px;
+    width: 306px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  .card-details{
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  body{
+    padding: 0px 60px;
+  }
+  h1{
+    font-size: 60px;
+  }
+  header{
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  body{
+    padding: 0px 45px;
+  }
+  h1{
+    font-size: 50px;
+    line-height: 70px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  .logotip{
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 445px){
+  .sec1-container1{
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  p{
+    font-size: 15px;
+  }
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  h4{
+    font-size: 16px;
+  }
+  .card-details{
+    width: 40%;
+  }
+  .sec1-container2{
+    max-width: 100%;
+  }
+  .card{
+    max-width: 100%;
+    height: 370px;
+  }
 }

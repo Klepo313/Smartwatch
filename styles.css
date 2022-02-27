@@ -4,13 +4,13 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  transition: all 0.2s ease-in-out;
 }
 :root{
   --pink: #F29494;
   --bg: #08162B;
   --light_blue: #2B3544;
 }
-
 body {
   background: var(--bg);
 }
@@ -93,7 +93,6 @@ p{
 
   color: #D8D8D8;
 }
-
 .sec2{
   display: flex;
   justify-content: center;
@@ -101,6 +100,15 @@ p{
 }
 .sec2 > img {
   max-width: 100%;
+}
+.arrRight{
+  position: absolute;
+  right: 0;
+  margin-right: 70px;
+}
+.arrRight:hover{
+  cursor: pointer;
+  transform: scale(0.8);
 }
 
 .card{
@@ -126,7 +134,7 @@ p{
 }
 h2{
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2.083vw;
   line-height: 51px;
   color: #FFFFFF;
@@ -145,6 +153,9 @@ h4{
 .card-details{
   position: relative;
   width: 7.448vw;
+}
+.burger{
+  display: none;
 }
 
 @media only screen and (max-width: 1440px){
@@ -165,6 +176,9 @@ h4{
   ul{
     font-size: 18px;
   }
+  .arrRight{
+    width: 18px;
+  }
 
 }
 /*1230*/
@@ -176,17 +190,42 @@ h4{
   h1{
     font-size: 80px;
   }
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 16px;
+  }
+  .card-details{
+    width: 40%;
+  }
+  li{
+    font-size: 16px;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+  header {
+    padding-bottom: 60px;
+  }
+  .sec1{
+    padding: 0px
+  }
   .sec1-container1{
-    padding-right: 140px;
-
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .sec1-container2{
-    padding-right: 140px;
-
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -199,5 +238,38 @@ h4{
     width: 306px;
     height: 372px;
   }
+  .logotip{
+    width: 11.927vw;
+  }
 
+}
+
+@media only screen and (max-width: 1100px){
+  body{
+    padding: 0px 140px;
+  }
+  ul{
+    display: none;
+  }
+  header{
+    padding: 60px 0px;
+  }
+  .burger{
+    display: block;
+  }
+  .arrRight{
+    margin: 0;
+    right: 150px;
+  }
+}
+
+/*946*/
+
+@media only screen and (max-width: 946px){
+  body{
+    padding: 0px 10.571vw;
+  }
+}
+@media only screen and (max-width: 850px){
+  
 }
